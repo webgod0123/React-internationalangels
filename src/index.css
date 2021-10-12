@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  font-family: Sanchez;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #efefef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+.header-menu.active {
+  color: #6dcfb2 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 25px;
+  font-family: Sanchez;
+  background: white;
+}
+
+.footer .privacy-link {
+  margin-left: 50px;
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 25px;
+  font-family: Sanchez;
+  border-bottom: 1px solid #eee;
+}
+
+.header-logo,
+.header-menu {
+  transition: 0.3s;
+}
+
+.header-menu {
+  padding: 0px 21px;
+}
+
+.content {
+  padding-top: 53px;
+  padding-bottom: 100px;
+}
+
+.contact-landing img {
+  width: 100%;
+}
+
+.landing-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.landing-title {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  border-bottom: solid black 2px;
+  padding: 0 30px;
+  margin: 0;
+  font-family: Sanchez;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.explore-btn {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  padding: 5px 60px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 25%);
+  font-family: Sanchez;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 7px 7px rgb(0 0 0 / 75%);
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  background: white;
+  overflow: hidden;
+  margin: -3% 20% 0%;
+  padding: 2% 10% 5%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.about h1 {
+  border-bottom: solid black 2px;
+  font-size: 32px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+.explore {
+  padding: 40px 5%;
+}
+
+.explore-row {
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.explore-row:last-child {
+  margin-top: 40px;
+}
+
+.blue-gradient {
+  background: linear-gradient(
+    130.39deg,
+    #5768ff 3.22%,
+    rgba(75, 201, 255, 0.35) 74.25%
+  );
+}
+
+.purple-gradient {
+  background: linear-gradient(
+    128.95deg,
+    #fa49fe 1.42%,
+    rgba(81, 130, 255, 0.33) 75.61%
+  );
+}
+
+.explore-startup {
+  padding: 10px 30px;
+  width: 47%;
+  margin: 2.5% 0;
+}
+
+.explore-startup img {
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 55%);
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.description {
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 55%);
+  font-size: 12px;
+  background-color: white;
+  padding: 10px 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.description h1 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: solid black 2px;
+  padding-bottom: 10px;
+}
+
+.description a {
+  text-align: center;
+  background: #5a9cff;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  width: 25%;
+  min-width: 75px;
+  padding: 6px 20px;
+  transition: 0.3s;
+  color: white;
+}
+
+.description a:hover {
+  color: white !important;
+  box-shadow: 0px 6px 6px rgb(0 0 0 / 75%);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: -13%;
+}
+
+.contact-info-item {
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  width: 28%;
+  margin: 0 4%;
+  min-width: 250px;
+}
+
+.contact-info-item img {
+  width: 80px;
+}
+
+.info {
+  text-decoration: underline;
+}
+
+.roadmap-title {
+  text-align: center;
+  align-content: center;
+  width: 80%;
+  margin: 2% 10% 2%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.roadmap-map {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding-bottom: 50px;
+  }
+
+  .landing-img {
+    display: none;
+  }
+
+  .landing {
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    height: calc(100vh - 53px);
+    background: linear-gradient(
+      129.65deg,
+      #5afccb 20.5%,
+      rgba(68, 183, 190, 0.28) 83.42%
+    );
+  }
+
+  .landing-title {
+    left: 8%;
+    right: 8%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .explore-btn {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .about {
+    margin: 15px;
+  }
+
+  .header,
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .explore {
+    padding: 20px 15px;
+  }
+
+  .explore-startup {
+    width: 100%;
+  }
+
+  .explore-row {
+    padding: 20px 15px;
+  }
+
+  .explore-startup {
+    padding: 0;
+  }
+
+  .explore-startup img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  .content {
+    padding-bottom: 0px;
+  }
+
+  .header-menu {
+    padding: 0 5px;
+  }
+
+  .contact-landing {
+    display: none;
+  }
+
+  .contact-info {
+    height: calc(100vh - 53px);
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    background: linear-gradient(90.16deg, #6a47ff 20.34%, #59ffcc 72.88%);
+  }
+
+  .contact-info-item {
+    padding: 20px;
+  }
+
+  .roadmap-title {
+    margin: 20px 15px;
+    width: inherit;
+  }
+
+  .roadmap-map {
+    width: 100%;
+    padding: 0 15px 20px;
+  }
+}
